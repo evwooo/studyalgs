@@ -36,7 +36,7 @@ I wanted to learn full-stack development, so I picked technologies that are actu
 - **jsonwebtoken** - JWT tokens for user authentication
 - **express-validator** - input validation because trust no one
 
-## Getting This Running
+## Set Up
 
 ### What You'll Need
 
@@ -45,8 +45,6 @@ I wanted to learn full-stack development, so I picked technologies that are actu
 - npm (comes with Node.js)
 
 ### Setup Steps
-
-Alright, let's get this thing running on your machine:
 
 1. **Clone this repo**
    ```bash
@@ -226,12 +224,12 @@ npm run preview      # Preview production build
 - Saves your solutions so you can come back and review your old code
 
 ### User Experience Stuff
-- Works on mobile and desktop (responsive design ftw)
+- Works on mobile and desktop
 - Clean interface with Tailwind CSS - no more fighting with custom CSS
 - Super fast loading thanks to Vite
 - Easy filtering and search so you can find exactly what you want to practice
 
-## When Things Break (Troubleshooting)
+## Troubleshooting
 
 ### If algorithm pages aren't loading
 
