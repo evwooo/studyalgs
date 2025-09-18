@@ -1,4 +1,4 @@
-# StudyAlgs 🚀
+# StudyAlgs
 
 Hey there! This is my algorithm study platform that I built to help myself (and hopefully others) prep for technical interviews. I got tired of jumping between different coding platforms, so I decided to build my own with all the features I actually wanted.
 
