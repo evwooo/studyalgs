@@ -167,6 +167,49 @@ We choose whichever gives us a larger sum. We keep track of:
 This algorithm handles negative numbers elegantly and runs in linear time.`,
         hints: '["Think about whether to start a new subarray or extend the current one at each position", "Consider Kadanes Algorithm", "What should you do when the running sum becomes negative?"]',
         tags: '["dynamic-programming", "array", "kadane-algorithm"]'
+      },
+      {
+        title: 'Reverse String',
+        slug: 'reverse-string',
+        description: 'Reverse a string in-place using constant extra space.',
+        difficulty: 'Easy',
+        category: 'String',
+        problem_statement: `Write a function that reverses a string. The input string is given as an array of characters s.
+
+You must do this by modifying the input array in-place with O(1) extra memory.`,
+        example_input: 's = ["h","e","l","l","o"]',
+        example_output: '["o","l","l","e","h"]',
+        constraints: `• 1 <= s.length <= 10^5
+• s[i] is a printable ascii character.`,
+        time_complexity: 'O(n)',
+        space_complexity: 'O(1)',
+        solution_template: `function reverseString(s) {
+    // Your code here
+}`,
+        solution_code: `function reverseString(s) {
+    let left = 0;
+    let right = s.length - 1;
+    
+    while (left < right) {
+        // Swap characters
+        [s[left], s[right]] = [s[right], s[left]];
+        left++;
+        right--;
+    }
+}`,
+        explanation: `This is a classic two-pointers problem. The key insight is to use two pointers starting from opposite ends of the array and swap characters while moving towards the center.
+
+Algorithm steps:
+1. Initialize left pointer at index 0 and right pointer at last index
+2. While left < right:
+   - Swap characters at left and right positions
+   - Move left pointer one step right
+   - Move right pointer one step left
+3. Continue until pointers meet or cross
+
+This approach uses O(1) extra space since we only use two pointer variables and perform in-place swaps.`,
+        hints: '["Try using two pointers approach", "Start from both ends of the array", "What happens when the pointers meet in the middle?"]',
+        tags: '["two-pointers", "string", "in-place"]'
       }
     ];
 
